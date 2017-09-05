@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GnssReceiverExpert</string>
+    <string name="FindGnssReceiverButtonCaption">Find Receiver!</string>
+    <string-array name="GnssReceiverTypes">
+        <item>Mass-Market</item>
+        <item>Professional grade</item>
+        <item>Spaceborne</item>
+    </string-array>
+</resources>

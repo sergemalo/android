@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.skydelsolutions.gnssreceiverexpert.find_gnss_receiver">
+
+    <Spinner
+        android:id="@+id/gnssReceiverTypes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:entries="@array/GnssReceiverTypes"/>
+
+    <Button
+        android:id="@+id/findGnssReceiverButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/gnssReceiverTypes"
+        android:layout_below="@id/gnssReceiverTypes"
+        android:onClick="onClickFindGnssReceiver"
+        android:text="@string/FindGnssReceiverButtonCaption" />
+
+    <TextView
+        android:id="@+id/gnssReceiverList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/findGnssReceiverButton"
+        android:layout_below="@id/findGnssReceiverButton"
+        android:layout_marginTop="18dp"/>
+
+</RelativeLayout>
