@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Messsager</string>
+    <string name="send">Envoie !</string>
+    <string name="defaultMessage">Écris ton message...</string>
+    <string name="chooserTitle">Par quel moyen?</string>
+</resources>
