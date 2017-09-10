@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.skydelsolutions.stopwatch.StopWatchActivity">
+
+
+    <TextView
+        android:id="@+id/textViewTimeId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp" />
+
+    <Button
+        android:id="@+id/buttonStartId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTimeId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="@string/buttonStartCaption"
+        android:onClick="onClickStart"/>
+
+    <Button
+        android:id="@+id/buttonStopId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/buttonStartId"
+        android:layout_below="@+id/buttonStartId"
+        android:layout_marginTop="22dp"
+        android:text="@string/buttonStopCaption"
+        android:onClick="onClickStop"/>
+
+    <Button
+        android:id="@+id/buttonResetId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/buttonStopId"
+        android:layout_centerVertical="true"
+        android:text="@string/buttonResetCaption"
+        android:onClick="onClickReset"/>
+
+    <EditText
+        android:id="@+id/textViewDebugId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="12sp"
+        android:layout_below="@+id/buttonResetId"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
